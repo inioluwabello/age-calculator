@@ -5,12 +5,52 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   line-height: 1.6;
-  background-color: #f3f2ef !important;
 }
 
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"),
+      url("../public/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins-BoldItalic";
+  src: local("Poppins-BoldItalic"),
+      url("../public/assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+      font-weight: 700i;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: local("Poppins-ExtraBold"),
+      url("../public/assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: local("Poppins-ExtraBoldItalic"),
+      url("../public/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+      font-weight: 800i;
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: local("Poppins-Italic"),
+      url("../public/assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400i;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+      url("../public/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+
 
 img {
   max-width: 100%;
@@ -59,4 +99,57 @@ img {
 
 .absolute {
   position: absolute;
+}
+
+
+.fontFacePoppinsBold {
+  font-family: "Poppins-Bold" !important;
+}
+.fontFaceRobotoBoldItalic {
+  font-family: "Poppins-BoldItalic" !important;
+}
+.fontFaceRobotoExtraBold {
+  font-family: "Poppins-ExtraBold" !important;
+}
+.fontFaceRobotoExtraBoldItalic {
+  font-family: "Poppins-ExtraBoldItalic" !important;
+}
+.fontFaceRobotoItalic {
+  font-family: "Poppins-Italic" !important;
+}
+.fontFaceRobotoRegular {
+  font-family: "Poppins-Regular" !important;
+}
+.white { background: hsl(0, 0%, 100%) }
+.white-color { color: hsl(0, 0%, 100%) }
+.off-white { background: hsl(0, 0%, 94%); }
+.off-white-color { color: hsl(0, 0%, 94%); }
+.light-grey{ background: hsl(0, 0%, 86%); }
+
+.smokey-grey-color{ color: hsl(0, 1%, 44%); }
+.off-black-color{ color: hsl(0, 0%, 8%); }
+.purple-color { color: hsl(259, 100%, 65%); }
+.light-red-color {color : hsl(0, 100%, 67%); }
+
+
+.content {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+.centered-content{
+  width: 800px;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-wrapper{
+  min-height: 200px;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 1rem 1rem 10rem 1rem;
 }

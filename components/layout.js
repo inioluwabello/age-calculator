@@ -1,7 +1,7 @@
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="container">{children}</main>
+      <div className="content off-white">{children}</div>
     </>
   );
 };
