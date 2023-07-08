@@ -205,6 +205,11 @@ img {
   .line {
     width: 100%;
   }
+  
+  .date-item {
+    width: 30%;
+    margin-right: 6%;
+  }
 }
 
 .centered-content {
@@ -285,7 +290,6 @@ img {
 }
 
 .age-display>h1>div>div {
-  /* min-width: 104px; */
   font-size: 5rem;
   margin-right: 1rem;
 }
