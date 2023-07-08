@@ -207,7 +207,7 @@ img {
   }
   
   .date-item {
-    width: 28%;
+    width: 28% !important;
     margin-right: 6%;
   }
 }
