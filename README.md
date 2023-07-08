@@ -56,6 +56,7 @@ Users should be able to:
 
 - [Stack Overflow](https://stackoverflow.com/questions/23593052/format-javascript-date-as-yyyy-mm-dd) - Javascript as date.
 - [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - CSS Media Queries.
+- [Chat GPT](https://chat.openai.com) - Calculate date in Years, Months, Days
 
 ## Author
 
