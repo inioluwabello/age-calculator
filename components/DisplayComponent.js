@@ -17,23 +17,28 @@ const DisplayComponent = ({ age }) => {
         <h1>
           <div className="fl">
             <div className="purple-color">{age.years}</div>
-            <div className="label">years</div>
+            <div className="label">{setText(age.years, 'years')}</div>
           </div>
         </h1>
         <h1>
           <div className="fl">
             <div className="purple-color">{age.months}</div>
-            <div className="label">months</div>
+            <div className="label">{setText(age.months, 'months')}</div>
           </div>
         </h1>
         <h1>
           <div className="fl">
             <div className="purple-color">{age.days}</div>
-            <div className="label">days</div>
+            <div className="label">{setText(age.days, 'days')}</div>
           </div>
         </h1>
       </div>
     </>
   );
 };
+
+const setText = (value, text) => {
+  if (parseInt(value) === 1) return text.substr(0, text.length - 1);
+  return text;
+}
 export default DisplayComponent;
