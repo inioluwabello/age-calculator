@@ -74,39 +74,45 @@ const FormComponent = ({ setAge }) => {
   };
 
   return (
-    <div className="date fl">
+    <div className="date fl smokey-grey-color">
       <div className="date-item">
-        <label htmlFor="day">DAY</label>
+        <label htmlFor="day" className="fontFacePoppinsBold">DAY</label>
         <input
           id="day"
           name="day"
           type="number"
           onChange={handleSetDay}
+          className="off-black-color fontFacePoppinsBold"
+          placeholder="DD"
           value={day}
         />
-        <span>{dayError.message}</span>
+        <span className="light-red-color">{dayError.message}</span>
       </div>
       <div className="date-item">
-        <label htmlFor="month">MONTH</label>
+        <label htmlFor="month" className="fontFacePoppinsBold">MONTH</label>
         <input
           id="month"
           name="month"
           type="number"
           onChange={handleSetMonth}
+          className="off-black-color fontFacePoppinsBold"
+          placeholder="MM"
           value={month}
         />
-        <span>{monthError.message}</span>
+        <span className="light-red-color">{monthError.message}</span>
       </div>
       <div className="date-item">
-        <label htmlFor="year">YEAR</label>
+        <label htmlFor="year" className="fontFacePoppinsBold">YEAR</label>
         <input
           id="year"
           name="year"
           type="number"
           onChange={handleSetYear}
+          className="off-black-color fontFacePoppinsBold"
+          placeholder="YYYY"
           value={year}
         />
-        <span>{yearError.message}</span>
+        <span className="light-red-color">{yearError.message}</span>
       </div>
     </div>
   );
