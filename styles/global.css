@@ -177,25 +177,31 @@ img {
   margin: 0;
   overflow: auto;
 }
+
 @media only screen and (max-width: 700px) {
   .centered-content {
     width: 100% !important;
     padding: 1rem;
   }
+
   .age-display>h1>div>div {
     /* min-width: 31%; */
     font-size: 2rem !important;
     margin-right: 1rem;
   }
+
   .icon {
     display: none !important;
   }
+
   .icon-mobile {
     display: block !important;
   }
+
   .age-display {
     margin-top: 3rem;
   }
+
   .line {
     width: 100%;
   }
@@ -222,20 +228,24 @@ img {
   position: relative;
   top: 1rem;
 }
+
 .icon {
   display: block;
 }
+
 .icon-mobile {
   display: none;
 }
 
-.icon, .icon-mobile {
+.icon,
+.icon-mobile {
   border-radius: 50px;
   padding: 0.8rem;
 }
 
 
-.icon>img, .icon-mobile>img {
+.icon>img,
+.icon-mobile>img {
   width: 40px;
 }
 
@@ -261,6 +271,17 @@ img {
 .date-item>span {
   display: block;
   width: 100%;
+}
+
+.date-item>input {
+  border: 1px solid #cccccc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.date-item>input.error {
+  border: 1px solid hsl(0, 100%, 67%) !important;
 }
 
 .age-display>h1>div>div {

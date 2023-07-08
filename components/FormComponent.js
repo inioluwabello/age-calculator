@@ -70,7 +70,7 @@ const FormComponent = ({ setAge }) => {
     setDayError({ error: false });
     setMonthError({ error: false });
     setYearError({ error: false });
-    setAge(calculateAge(`${date[0]}-${date[1]}-${date[2]}`));
+    setAge(calculateAge(`${date[0]}/${date[1]}/${date[2]}`));
   };
 
   return (
@@ -82,7 +82,7 @@ const FormComponent = ({ setAge }) => {
           name="day"
           type="number"
           onChange={handleSetDay}
-          className="off-black-color fontFacePoppinsBold"
+          className={`off-black-color fontFacePoppinsBold ${dayError.error ? "error" : ""}`}
           placeholder="DD"
           value={day}
         />
@@ -95,7 +95,7 @@ const FormComponent = ({ setAge }) => {
           name="month"
           type="number"
           onChange={handleSetMonth}
-          className="off-black-color fontFacePoppinsBold"
+          className={`off-black-color fontFacePoppinsBold ${monthError.error ? "error" : ""}`}
           placeholder="MM"
           value={month}
         />
@@ -108,7 +108,7 @@ const FormComponent = ({ setAge }) => {
           name="year"
           type="number"
           onChange={handleSetYear}
-          className="off-black-color fontFacePoppinsBold"
+          className={`off-black-color fontFacePoppinsBold ${yearError.error ? "error" : ""}`}
           placeholder="YYYY"
           value={year}
         />
